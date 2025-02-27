@@ -1,11 +1,11 @@
 import React from 'react'
-import AppRoutes from '../routes'
+import Header from '../components/web/header/header'
 
 function WebContent() {
   return (
     <div>
-      <h1>Bienvenido a la versión web</h1>
-      <AppRoutes />
+      <Header />
+      <h1>Contenido web</h1>
     </div>
   )
 }

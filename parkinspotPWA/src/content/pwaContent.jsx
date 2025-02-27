@@ -1,11 +1,11 @@
 import React from 'react'
-import AppRoutes from '../routes'
+import PWARoutes from '../routes/pwaRoutes'
 
 function PWAContent() {
   return (
     <div>
       <h1>Bienvenido a la versión PWA</h1>
-      <AppRoutes />
+      <PWARoutes />
     </div>
   )
 }
