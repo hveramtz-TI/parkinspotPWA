@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
     color: white;
     background-color: #000000;
     background-image: url('/img/parkinlot.jpeg');
@@ -25,6 +26,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Opacidad específica para bienvenida */
     z-index: 3;
+    top: 10px;
 }
 
 .bienvenida h1 {
@@ -35,4 +37,39 @@
 .bienvenida .titulo-app {
     border: white 2px solid;
     padding: 1% 2%;
+}
+
+/* Media Queries para hacer el diseño reactivo */
+@media (max-width: 1200px) {
+    .bienvenida {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .bienvenida {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bienvenida {
+        font-size: 1.4rem;
+        border-radius: 15%;
+    }
+
+    .bienvenida .titulo-app {
+        padding: 2% 4%;
+    }
+}
+
+@media (max-width: 576px) {
+    .bienvenida {
+        font-size: 1.2rem;
+        border-radius: 10%;
+    }
+
+    .bienvenida .titulo-app {
+        padding: 3% 6%;
+    }
 }

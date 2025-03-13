@@ -1,47 +1,111 @@
-.que-es
-{
+.que-es {
     display: flex;
-    flex-direction: horizontal;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: black;
     height: 70vh;
+    width: 80%;
+    margin: auto;
 }
 
-.que-es .ContenedorTexto
-{
+.que-es .ContenedorTexto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     align-content: center;
-    width: 40%;
+    width: 60%;
     margin-left: 100px;
     color: aliceblue;
 }
 
-.que-es .ContenedorTexto h2
-{
+.que-es .ContenedorTexto h2 {
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.que-es .ContenedorTexto p
-{
+.que-es .ContenedorTexto p {
     font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.que-es .ContenedorImagen
-{
+.que-es .ContenedorImagen {
     width: 50%;
+    height: 52%;
+    border-left: 20px solid #e5ff00;
+    border-top: 20px dashed #ffffff;
+    border-bottom: 20px dashed #ffffff;
+    border-radius: 2%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.que-es .ContenedorImagen img
-{
+.ContenedorImagen .carontop {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .que-es {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .que-es .ContenedorTexto {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .que-es .ContenedorImagen {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .que-es .ContenedorTexto h2 {
+        font-size: 1.5rem;
+    }
+
+    .que-es .ContenedorTexto p {
+        font-size: 1.2rem;
+    }
+
+    .que-es .ContenedorImagen {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .que-es {
+        width: 100%;
+    }
+
+    .que-es .ContenedorTexto {
+        width: 90%;
+    }
+
+    .que-es .ContenedorTexto h2 {
+        font-size: 1.2rem;
+    }
+
+    .que-es .ContenedorTexto p {
+        font-size: 1rem;
+    }
+
+    .que-es .ContenedorImagen {
+        width: 80%;
+        height: auto;
+    }
 }
